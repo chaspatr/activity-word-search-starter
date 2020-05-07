@@ -16,6 +16,12 @@ searchButton.addEventListener("click", function () {
   // TODO 2: Write an IF statement which determines whether
   // the user-supplied string from #textbox is included in
   // the #sentence string.
+  if (mainSentence.innerText.includes(searchWord.value) == true) {
+    searchResults.innerHTML = "A match was found!";
+  } else {
+    searchResults.innerHTML = "A match was not found was found!";
+  }
+
   // Hint 1: To get the user-supplied string from the input
   // box (#textbox), use the property .value on the variable
   // you assigned the textbox element to.
